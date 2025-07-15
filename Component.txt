@@ -1,0 +1,15 @@
+Components:
+-Components are the basic building block of angular application.
+Whole application is divided into logical small UI parts called Components.
+
+Each components have four files such as
+   html(template) -----used for view. 
+   css(style)------used for styling.
+   ts(component)----used for logic.
+   spec.ts(specifiaction)----used for testing.
+
+Components are useful for UI resusability and easy to maintain or debug.
+Angular uses command line interface to create debug test components.these process is called scaffolding.
+
+Create a Component: ng generate component component_name
+
