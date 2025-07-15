@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    padding:0;
+    background:white;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.message-box{
+    text-align:center;
+    background-color: white;
+    padding: 40px 60px;
+    border-radius:12px;
+}
+
+h1{
+    font-size: 3em;
+    color: aqua;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 1.2em;
+    color:#555;
+    
+}
