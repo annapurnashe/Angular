@@ -1,0 +1,52 @@
+Data Binding:
+----------------------------------
+It refers to the communication component file(.ts) and template file(.html) within
+a component.
+
+There are two kinds of data Binding
+1.one way data Binding:= 
+Using this we can send data from template to component or component to template.
+
+There are three posible way for one way data Binding:
+a.string interpolation:
+It is used to get the data from component file to template file as a string.
+It is represented with double braces.
+ex. //html                                   //ts
+
+<p>The fruit is {{name}}<p>               public class componentname{
+                                                name:string="apple"
+                                            }
+
+but it always pass data as string,sometimes we ness to pass other data such as boolean. for taht we can use 
+property Binding.
+
+B.property Binding:
+It is also used to get the data from component file to template file as it is.
+It is represented as square braces.
+      
+<element [property]="variable" >
+ex.    //html                                      //ts
+<     img[src]="url" [alt]="title"/>            public class componentname{
+                                                        url="path"
+                                                        title="sinchan"
+                                                    }
+
+C.Event Binding:
+It is used to send data from templateto component file as an event. Paranthesis().
+
+    <element>(event)="funcationName()">                                     
+           //html                                       //ts
+    <button(click)="fun()">click</button>          public class componentname{
+                                                        fun(){
+                                                            alert("helloo")
+                                                        }
+                                                    }
+                                                        
+
+
+2.Two way data Binding:
+
+
+command:
+#ng new component
+ng serve
