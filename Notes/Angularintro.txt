@@ -1,17 +1,17 @@
 Angular :  
 Angular is an open source front end Framework of Javascript which is used to build single page client Applications.
-Frameworks provide structure for language and it also provides complete developer environment
+Frameworks provide structure for language and it also provides complete developer environment.
 single page applications load the content of pages without reloading the current page and open source refers to free code to use.
 The Recent version of Angular is v20.
 React vs Angular:                                                 
--React is a JS library which is used              | -Angular is a JS framework which provides complete environment.
+-React is a JS library which is used              |-Angular is a JS framework which provides complete environment.
 for user Interfaces                               |                          
                                                   |
 -React is developed and maintained by Meta        |-Angular is developed and maintained by Google.
                                                   |
 -React uses virtual DOM.                          |-Angular uses Real DOM
                                                   |
--React provides one way data binding              |-angular provides two way data binding
+-React provides one way data binding              |-Angular provides two way data binding
 
 Angular vs Angular JS:
           In 2010, Google developed a framework called Angular JS but it uses javascript. Javascript uses dynamic data typing, so production code becomes difficult. In 2012, microsoft developed a superset of js called typescript which provides static typing. In 2012, Google developed angular 2nd versing using typescript and named it as "Angular"

@@ -1,0 +1,48 @@
+<app-header></app-header>
+<main>
+  <select>
+    <option value="beauty">beauty</option>
+    <option value="fragrance">fragrances</option>
+    <option value="furniture">furniture</option>
+    <option value="groceries">groceries</option>
+  </select>
+
+
+  @switch(category){
+    @case( 'All'){
+      <h2 class="title">All products</h2>
+    }
+
+    @case ('beauty'){
+      <h2 class="title">beauty product</h2>
+    }
+
+    @case ('fragrences'){
+      <h2 class="title">fragrences products</h2>
+    }
+
+    @case ('groceries'){
+      <h2 class="title">groceries- products</h2>
+    }
+  }
+
+
+  @for (p of products;track p){
+    <div class="produc">
+      <img [src]="p.thumbnail" alt="p.title">
+      <h2>{{p.title}}</h2>
+      <p>price:1{{p.price}}</p>
+      <p class="category">category::{{p.category}}</p>
+      <button (click)="fun()">Add to cart</button>
+
+
+    </div>
+    
+  }
+  @if(isShow){
+      <div class="modal">
+        product is added sucessfully
+      </div>
+    }
+</main>
+<app-footer></app-footer>

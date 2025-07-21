@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>🔍 Cartoon Character Search</h2>
+
+  <input [(ngModel)]="searchText" placeholder="Enter character name..." class="input" />
+  <button (click)="onSearch()" class="btn">Search</button>
+
+  <div *ngIf="characterFound">
+    <p><strong>Showing result for:</strong> {{ searchText }}</p>
+    <img [src]="imageUrl" alt="Character" class="character-img" />
+  </div>
+
+  <div *ngIf="!characterFound && searchText">
+    <p style="color: red;">Character not found!</p>
+  </div>
+</div>
